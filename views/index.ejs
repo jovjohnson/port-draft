@@ -2,14 +2,17 @@
 <html>
   <head>
     <title>jovvi johnson</title>
-    <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <link rel='stylesheet' href='/stylesheets/animate.css'>
+    <link rel='stylesheet' href='/bower_components/hover/css/hover-min.css'>
 
 
     <script src='/bower_components/jquery/dist/jquery.min.js'></script>
     <script src='/bower_components/angular/angular.js'></script>
     <script src='/bower_components/angular-ui-router/release/angular-ui-router.js'></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
     <script src="/js/module.js"></script>
     <script src="/js/controllers.js"></script>
     <script src="/js/services.js"></script>
@@ -17,13 +20,28 @@
 
   <body ng-app='myApp' ng-controller='MyCtrl'>
 
+
+  <div id="heading" class="animated fadeInDown">
+    <p id="name">Jovvi Johnson</p>
+    <center><div class="photo"></div></center>
+    <p id="fswd">Full Stack Developer</p>
+    <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-github-square fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-angellist fa-2x" aria-hidden="true"></i>
+  </div>
+
+  <br>
+  <br>
+
+
   <center>
-    <h1>full stack javascript developer</h1>
-    <br>
   <ul id="nav">
-    <li class="nav-items hvr-grow"><button class="btn" id="home">test</button></li>
-    <li class="nav-items hvr-grow"><button class="btn" id="port">test</button></li>
-    <li class="nav-items hvr-grow"><button class="btn" id="contact">test</button></li>
+    <li class="nav-items"><button class="btn hvr-shrink" id="home" ui-sref='home'>HOME</button></li>
+    <li class="nav-items"><button class="btn hvr-grow" id="about" ui-sref='about'>ABOUT</button></li>
+    <li class="nav-items"><button class="btn hvr-grow" id="port" ui-sref='portfolio'>PROJECTS</button></li>
+    <li class="nav-items"><button class="btn hvr-grow" id="resume" ui-sref='resume'>RESUME</button></li>
   </ul>
   </center>
 

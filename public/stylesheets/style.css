@@ -1,9 +1,30 @@
 body {
-  padding: 50px;
+  padding: 10px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background: #efefef;
-  font-family: 'Questrial', sans-serif;
+  background: black;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  opacity: 0.9;
 }
+
+#heading {
+  line-height: 1px;
+  text-align: center;
+}
+
+#name {
+  font-size: 75px;
+  font-style: bold;
+}
+
+#fswd {
+  font-size: 27px;
+}
+
+i {
+  margin: 2px;
+}
+
 
 a {
   color: #00B7FF;
@@ -25,14 +46,20 @@ a {
   color: #f9879b;
 }
 
-#contact {
+#resume {
   color: #9c89f7;
+}
+
+#about {
+  color: #58f2f4;
 }
 
 .photo {
   width: 100px;
 	height: 100px;
-	background: black;
+	background: white;
+  background-image: url('https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAALcAAAAJGU2MzYwODJlLTY0ZDEtNDY1OS05MmI4LThjOTY4MDA2ODQyMQ.jpg');
+  background-size: 100%;
 	-moz-border-radius: 50px;
 	-webkit-border-radius: 50px;
 	border-radius: 50px;
@@ -40,11 +67,14 @@ a {
 
 .btn {
   background: none;
-  border: 1px solid;
-  border-bottom-width: 3px;
-  font: inherit;
-  margin: 5px;
+  border: 2px solid;
+  border-bottom-width: 4px;
+  font-family: 'Questrial', sans-serif;
+  margin: 7px;
   text-transform: inherit;
+  width: 100px;
+  height: 50px;
+  letter-spacing: 1px;
 }
 
 .hvr-grow {
@@ -66,6 +96,27 @@ a {
   transform: scale(1.1);
 }
 
+.hvr-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
+  -webkit-animation-name: hvr-pulse;
+  animation-name: hvr-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
 
 
 

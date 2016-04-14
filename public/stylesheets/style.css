@@ -69,12 +69,18 @@ a {
 	-moz-border-radius: 50px;
 	-webkit-border-radius: 50px;
 	border-radius: 50px;
+  opacity: 0.9;
+}
+
+#about-me{
+  margin: 50px;
 }
 
 .btn {
   background: none;
   border: 2px solid;
   border-bottom-width: 4px;
+  color: black;
   font-family: 'Questrial', sans-serif;
   margin: 7px;
   text-transform: inherit;
@@ -137,6 +143,11 @@ a {
   transform: translate(-50%, -50%);
 }
 
+.frame {
+  border: 2px solid #f9879b;
+  height: 300px;
+  width: 200px;
+}
 
 
 
